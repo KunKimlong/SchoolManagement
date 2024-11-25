@@ -1,6 +1,6 @@
 ﻿namespace SchoolManagement
 {
-    partial class Student
+    partial class StudentFrm
     {
         /// <summary>
         /// Required designer variable.
@@ -163,7 +163,7 @@
             this.button2.Text = "Clear";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // Student
+            // StudentFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,7 +181,7 @@
             this.Controls.Add(this.emailLoginLbl);
             this.Controls.Add(this.emailTxt);
             this.Controls.Add(this.headLoginLbl);
-            this.Name = "Student";
+            this.Name = "StudentFrm";
             this.Text = "Student";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -33,7 +33,6 @@
             this.btnGoCourses = new System.Windows.Forms.Button();
             this.btnGoManageRoom = new System.Windows.Forms.Button();
             this.btnGoTeacher = new System.Windows.Forms.Button();
-            this.btnGoCoursePrice = new System.Windows.Forms.Button();
             this.btnGoPayment = new System.Windows.Forms.Button();
             this.btnGoStudent = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -61,6 +60,7 @@
             this.btnGoClass.Text = "Manage Classes";
             this.btnGoClass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGoClass.UseVisualStyleBackColor = false;
+            this.btnGoClass.Click += new System.EventHandler(this.btnGoClass_Click);
             // 
             // btnGoCourses
             // 
@@ -103,20 +103,7 @@
             this.btnGoTeacher.Text = "Manage Teacher";
             this.btnGoTeacher.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGoTeacher.UseVisualStyleBackColor = false;
-            // 
-            // btnGoCoursePrice
-            // 
-            this.btnGoCoursePrice.BackColor = System.Drawing.Color.Transparent;
-            this.btnGoCoursePrice.FlatAppearance.BorderSize = 0;
-            this.btnGoCoursePrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGoCoursePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoCoursePrice.Location = new System.Drawing.Point(446, 245);
-            this.btnGoCoursePrice.Name = "btnGoCoursePrice";
-            this.btnGoCoursePrice.Size = new System.Drawing.Size(248, 43);
-            this.btnGoCoursePrice.TabIndex = 5;
-            this.btnGoCoursePrice.Text = "Manage Cource Price";
-            this.btnGoCoursePrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGoCoursePrice.UseVisualStyleBackColor = false;
+            this.btnGoTeacher.Click += new System.EventHandler(this.btnGoTeacher_Click);
             // 
             // btnGoPayment
             // 
@@ -124,7 +111,7 @@
             this.btnGoPayment.FlatAppearance.BorderSize = 0;
             this.btnGoPayment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGoPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGoPayment.Location = new System.Drawing.Point(262, 328);
+            this.btnGoPayment.Location = new System.Drawing.Point(446, 245);
             this.btnGoPayment.Name = "btnGoPayment";
             this.btnGoPayment.Size = new System.Drawing.Size(212, 43);
             this.btnGoPayment.TabIndex = 6;
@@ -145,6 +132,7 @@
             this.btnGoStudent.Text = "Manage Students";
             this.btnGoStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGoStudent.UseVisualStyleBackColor = false;
+            this.btnGoStudent.Click += new System.EventHandler(this.btnGoStudent_Click);
             // 
             // Home
             // 
@@ -155,7 +143,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnGoStudent);
             this.Controls.Add(this.btnGoPayment);
-            this.Controls.Add(this.btnGoCoursePrice);
             this.Controls.Add(this.btnGoTeacher);
             this.Controls.Add(this.btnGoManageRoom);
             this.Controls.Add(this.btnGoCourses);
@@ -175,7 +162,6 @@
         private System.Windows.Forms.Button btnGoCourses;
         private System.Windows.Forms.Button btnGoManageRoom;
         private System.Windows.Forms.Button btnGoTeacher;
-        private System.Windows.Forms.Button btnGoCoursePrice;
         private System.Windows.Forms.Button btnGoPayment;
         private System.Windows.Forms.Button btnGoStudent;
     }
