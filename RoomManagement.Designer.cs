@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstRoom = new System.Windows.Forms.ListBox();
             this.btnRoomClear = new System.Windows.Forms.Button();
             this.btnRoomAdd = new System.Windows.Forms.Button();
             this.txtRoomFloor = new System.Windows.Forms.TextBox();
@@ -39,15 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // lstRoom
-            // 
-            this.lstRoom.FormattingEnabled = true;
-            this.lstRoom.ItemHeight = 16;
-            this.lstRoom.Location = new System.Drawing.Point(146, 321);
-            this.lstRoom.Name = "lstRoom";
-            this.lstRoom.Size = new System.Drawing.Size(529, 148);
-            this.lstRoom.TabIndex = 27;
             // 
             // btnRoomClear
             // 
@@ -145,7 +135,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 550);
-            this.Controls.Add(this.lstRoom);
             this.Controls.Add(this.btnRoomClear);
             this.Controls.Add(this.btnRoomAdd);
             this.Controls.Add(this.txtRoomFloor);
@@ -164,8 +153,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox lstRoom;
         private System.Windows.Forms.Button btnRoomClear;
         private System.Windows.Forms.Button btnRoomAdd;
         private System.Windows.Forms.TextBox txtRoomFloor;

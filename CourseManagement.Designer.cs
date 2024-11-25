@@ -39,7 +39,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnCourseAdd = new System.Windows.Forms.Button();
             this.btnCourseClear = new System.Windows.Forms.Button();
-            this.lstCourses = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -152,21 +151,11 @@
             this.btnCourseClear.Text = "Clear";
             this.btnCourseClear.UseVisualStyleBackColor = true;
             // 
-            // lstCourses
-            // 
-            this.lstCourses.FormattingEnabled = true;
-            this.lstCourses.ItemHeight = 16;
-            this.lstCourses.Location = new System.Drawing.Point(193, 368);
-            this.lstCourses.Name = "lstCourses";
-            this.lstCourses.Size = new System.Drawing.Size(529, 148);
-            this.lstCourses.TabIndex = 14;
-            // 
             // CourseManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 518);
-            this.Controls.Add(this.lstCourses);
             this.Controls.Add(this.btnCourseClear);
             this.Controls.Add(this.btnCourseAdd);
             this.Controls.Add(this.txtCourseDiscount);
@@ -198,6 +187,5 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnCourseAdd;
         private System.Windows.Forms.Button btnCourseClear;
-        private System.Windows.Forms.ListBox lstCourses;
     }
 }
