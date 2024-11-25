@@ -30,28 +30,29 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.classname = new System.Windows.Forms.Label();
-            this.class_txtname = new System.Windows.Forms.TextBox();
+            this.nameTxt = new System.Windows.Forms.TextBox();
             this.class_courseid = new System.Windows.Forms.Label();
-            this.class_cbcourseid = new System.Windows.Forms.ComboBox();
-            this.class_cbroomid = new System.Windows.Forms.ComboBox();
+            this.courseIdCbo = new System.Windows.Forms.ComboBox();
+            this.roomIdCbo = new System.Windows.Forms.ComboBox();
             this.classid = new System.Windows.Forms.Label();
-            this.class_cbteacherid = new System.Windows.Forms.ComboBox();
+            this.teacherIdCbo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.class_date = new System.Windows.Forms.Label();
-            this.class_startdate = new System.Windows.Forms.DateTimePicker();
-            this.class_enddate = new System.Windows.Forms.DateTimePicker();
+            this.dateSart = new System.Windows.Forms.DateTimePicker();
+            this.dateEnd = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.class_btnadd = new System.Windows.Forms.Button();
-            this.class_btnclear = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(179, 24);
+            this.label1.Location = new System.Drawing.Point(209, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 33);
+            this.label1.Size = new System.Drawing.Size(153, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "New Class";
             // 
@@ -59,82 +60,86 @@
             // 
             this.classname.AutoSize = true;
             this.classname.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classname.Location = new System.Drawing.Point(63, 92);
+            this.classname.Location = new System.Drawing.Point(74, 113);
+            this.classname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.classname.Name = "classname";
-            this.classname.Size = new System.Drawing.Size(47, 19);
+            this.classname.Size = new System.Drawing.Size(59, 24);
             this.classname.TabIndex = 1;
             this.classname.Text = "Name";
             // 
-            // class_txtname
+            // nameTxt
             // 
-            this.class_txtname.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_txtname.Location = new System.Drawing.Point(185, 89);
-            this.class_txtname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.class_txtname.Name = "class_txtname";
-            this.class_txtname.Size = new System.Drawing.Size(276, 27);
-            this.class_txtname.TabIndex = 2;
+            this.nameTxt.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameTxt.Location = new System.Drawing.Point(216, 110);
+            this.nameTxt.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.nameTxt.Name = "nameTxt";
+            this.nameTxt.Size = new System.Drawing.Size(321, 32);
+            this.nameTxt.TabIndex = 2;
             // 
             // class_courseid
             // 
             this.class_courseid.AutoSize = true;
             this.class_courseid.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_courseid.Location = new System.Drawing.Point(63, 136);
+            this.class_courseid.Location = new System.Drawing.Point(74, 167);
+            this.class_courseid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.class_courseid.Name = "class_courseid";
-            this.class_courseid.Size = new System.Drawing.Size(76, 19);
+            this.class_courseid.Size = new System.Drawing.Size(95, 24);
             this.class_courseid.TabIndex = 3;
             this.class_courseid.Text = "Course_ID";
             // 
-            // class_cbcourseid
+            // courseIdCbo
             // 
-            this.class_cbcourseid.AllowDrop = true;
-            this.class_cbcourseid.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_cbcourseid.FormattingEnabled = true;
-            this.class_cbcourseid.Location = new System.Drawing.Point(185, 136);
-            this.class_cbcourseid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.class_cbcourseid.Name = "class_cbcourseid";
-            this.class_cbcourseid.Size = new System.Drawing.Size(276, 27);
-            this.class_cbcourseid.TabIndex = 4;
-            this.class_cbcourseid.SelectedIndexChanged += new System.EventHandler(this.class_cbid_SelectedIndexChanged);
+            this.courseIdCbo.AllowDrop = true;
+            this.courseIdCbo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseIdCbo.FormattingEnabled = true;
+            this.courseIdCbo.Location = new System.Drawing.Point(216, 167);
+            this.courseIdCbo.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.courseIdCbo.Name = "courseIdCbo";
+            this.courseIdCbo.Size = new System.Drawing.Size(321, 32);
+            this.courseIdCbo.TabIndex = 4;
+            this.courseIdCbo.SelectedIndexChanged += new System.EventHandler(this.class_cbid_SelectedIndexChanged);
             // 
-            // class_cbroomid
+            // roomIdCbo
             // 
-            this.class_cbroomid.AllowDrop = true;
-            this.class_cbroomid.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_cbroomid.FormattingEnabled = true;
-            this.class_cbroomid.Location = new System.Drawing.Point(185, 188);
-            this.class_cbroomid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.class_cbroomid.Name = "class_cbroomid";
-            this.class_cbroomid.Size = new System.Drawing.Size(276, 27);
-            this.class_cbroomid.TabIndex = 6;
+            this.roomIdCbo.AllowDrop = true;
+            this.roomIdCbo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomIdCbo.FormattingEnabled = true;
+            this.roomIdCbo.Location = new System.Drawing.Point(216, 231);
+            this.roomIdCbo.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.roomIdCbo.Name = "roomIdCbo";
+            this.roomIdCbo.Size = new System.Drawing.Size(321, 32);
+            this.roomIdCbo.TabIndex = 6;
             // 
             // classid
             // 
             this.classid.AutoSize = true;
             this.classid.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classid.Location = new System.Drawing.Point(63, 195);
+            this.classid.Location = new System.Drawing.Point(74, 240);
+            this.classid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.classid.Name = "classid";
-            this.classid.Size = new System.Drawing.Size(68, 19);
+            this.classid.Size = new System.Drawing.Size(86, 24);
             this.classid.TabIndex = 5;
             this.classid.Text = "Room_ID";
             // 
-            // class_cbteacherid
+            // teacherIdCbo
             // 
-            this.class_cbteacherid.AllowDrop = true;
-            this.class_cbteacherid.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_cbteacherid.FormattingEnabled = true;
-            this.class_cbteacherid.Location = new System.Drawing.Point(185, 233);
-            this.class_cbteacherid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.class_cbteacherid.Name = "class_cbteacherid";
-            this.class_cbteacherid.Size = new System.Drawing.Size(276, 27);
-            this.class_cbteacherid.TabIndex = 8;
+            this.teacherIdCbo.AllowDrop = true;
+            this.teacherIdCbo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherIdCbo.FormattingEnabled = true;
+            this.teacherIdCbo.Location = new System.Drawing.Point(216, 287);
+            this.teacherIdCbo.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.teacherIdCbo.Name = "teacherIdCbo";
+            this.teacherIdCbo.Size = new System.Drawing.Size(321, 32);
+            this.teacherIdCbo.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(63, 240);
+            this.label2.Location = new System.Drawing.Point(74, 295);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 19);
+            this.label2.Size = new System.Drawing.Size(101, 24);
             this.label2.TabIndex = 7;
             this.label2.Text = "Teacher_ID";
             // 
@@ -142,84 +147,87 @@
             // 
             this.class_date.AutoSize = true;
             this.class_date.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_date.Location = new System.Drawing.Point(63, 280);
+            this.class_date.Location = new System.Drawing.Point(74, 345);
+            this.class_date.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.class_date.Name = "class_date";
-            this.class_date.Size = new System.Drawing.Size(78, 19);
+            this.class_date.Size = new System.Drawing.Size(99, 24);
             this.class_date.TabIndex = 9;
             this.class_date.Text = "Start_Date";
             // 
-            // class_startdate
+            // dateSart
             // 
-            this.class_startdate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_startdate.Location = new System.Drawing.Point(185, 280);
-            this.class_startdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.class_startdate.Name = "class_startdate";
-            this.class_startdate.Size = new System.Drawing.Size(275, 27);
-            this.class_startdate.TabIndex = 10;
+            this.dateSart.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateSart.Location = new System.Drawing.Point(216, 345);
+            this.dateSart.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dateSart.Name = "dateSart";
+            this.dateSart.Size = new System.Drawing.Size(320, 32);
+            this.dateSart.TabIndex = 10;
             // 
-            // class_enddate
+            // dateEnd
             // 
-            this.class_enddate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_enddate.Location = new System.Drawing.Point(185, 328);
-            this.class_enddate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.class_enddate.Name = "class_enddate";
-            this.class_enddate.Size = new System.Drawing.Size(275, 27);
-            this.class_enddate.TabIndex = 12;
+            this.dateEnd.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateEnd.Location = new System.Drawing.Point(216, 404);
+            this.dateEnd.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dateEnd.Name = "dateEnd";
+            this.dateEnd.Size = new System.Drawing.Size(320, 32);
+            this.dateEnd.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(63, 328);
+            this.label3.Location = new System.Drawing.Point(74, 404);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 19);
+            this.label3.Size = new System.Drawing.Size(91, 24);
             this.label3.TabIndex = 11;
             this.label3.Text = "End_Date";
             // 
-            // class_btnadd
+            // btnAdd
             // 
-            this.class_btnadd.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_btnadd.ForeColor = System.Drawing.Color.Black;
-            this.class_btnadd.Location = new System.Drawing.Point(58, 392);
-            this.class_btnadd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.class_btnadd.Name = "class_btnadd";
-            this.class_btnadd.Size = new System.Drawing.Size(172, 40);
-            this.class_btnadd.TabIndex = 13;
-            this.class_btnadd.Text = "Add Class";
-            this.class_btnadd.UseVisualStyleBackColor = true;
+            this.btnAdd.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.Black;
+            this.btnAdd.Location = new System.Drawing.Point(68, 482);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(201, 49);
+            this.btnAdd.TabIndex = 13;
+            this.btnAdd.Text = "Add Class";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // class_btnclear
+            // btnClear
             // 
-            this.class_btnclear.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.class_btnclear.Location = new System.Drawing.Point(287, 392);
-            this.class_btnclear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.class_btnclear.Name = "class_btnclear";
-            this.class_btnclear.Size = new System.Drawing.Size(172, 40);
-            this.class_btnclear.TabIndex = 14;
-            this.class_btnclear.Text = "Clear";
-            this.class_btnclear.UseVisualStyleBackColor = true;
+            this.btnClear.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(335, 482);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(201, 49);
+            this.btnClear.TabIndex = 14;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
             // ClassFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 468);
-            this.Controls.Add(this.class_btnclear);
-            this.Controls.Add(this.class_btnadd);
-            this.Controls.Add(this.class_enddate);
+            this.ClientSize = new System.Drawing.Size(630, 576);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.dateEnd);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.class_startdate);
+            this.Controls.Add(this.dateSart);
             this.Controls.Add(this.class_date);
-            this.Controls.Add(this.class_cbteacherid);
+            this.Controls.Add(this.teacherIdCbo);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.class_cbroomid);
+            this.Controls.Add(this.roomIdCbo);
             this.Controls.Add(this.classid);
-            this.Controls.Add(this.class_cbcourseid);
+            this.Controls.Add(this.courseIdCbo);
             this.Controls.Add(this.class_courseid);
-            this.Controls.Add(this.class_txtname);
+            this.Controls.Add(this.nameTxt);
             this.Controls.Add(this.classname);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "ClassFrm";
             this.Text = "Teacher_ID";
             this.ResumeLayout(false);
@@ -231,18 +239,18 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label classname;
-        private System.Windows.Forms.TextBox class_txtname;
+        private System.Windows.Forms.TextBox nameTxt;
         private System.Windows.Forms.Label class_courseid;
-        private System.Windows.Forms.ComboBox class_cbcourseid;
-        private System.Windows.Forms.ComboBox class_cbroomid;
+        private System.Windows.Forms.ComboBox courseIdCbo;
+        private System.Windows.Forms.ComboBox roomIdCbo;
         private System.Windows.Forms.Label classid;
-        private System.Windows.Forms.ComboBox class_cbteacherid;
+        private System.Windows.Forms.ComboBox teacherIdCbo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label class_date;
-        private System.Windows.Forms.DateTimePicker class_startdate;
-        private System.Windows.Forms.DateTimePicker class_enddate;
+        private System.Windows.Forms.DateTimePicker dateSart;
+        private System.Windows.Forms.DateTimePicker dateEnd;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button class_btnadd;
-        private System.Windows.Forms.Button class_btnclear;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnClear;
     }
 }
