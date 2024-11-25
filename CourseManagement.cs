@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SchoolManagement
 {
-    public partial class Payment : Form
+    public partial class CourseManagement : Form
     {
-        public Payment()
+        public CourseManagement()
         {
             InitializeComponent();
         }
