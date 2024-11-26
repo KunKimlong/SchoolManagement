@@ -32,9 +32,7 @@ namespace SchoolManagement
                     dataGridViewTeacher.Columns.Add("status", "Status");
                     dataGridViewTeacher.Columns.Add("experiences", "Experiences");
                     dataGridViewTeacher.Columns.Add("email", "Email");
-                    dataGridViewTeacher.Columns.Add("birth_date", "Birth Date");
                     dataGridViewTeacher.Columns.Add("type", "Type");
-                    dataGridViewTeacher.Columns.Add("joined_date", "Joined Date");
                 }
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
@@ -47,6 +45,7 @@ namespace SchoolManagement
                             while (reader.Read())
                             {
                                 int rowIndex = dataGridViewTeacher.Rows.Add();
+                                DateTime defaultDate = DateTime.MinValue;
                                 dataGridViewTeacher.Rows[rowIndex].Cells["id"].Value = reader["id"];
                                 dataGridViewTeacher.Rows[rowIndex].Cells["first_name"].Value = reader["first_name"];
                                 dataGridViewTeacher.Rows[rowIndex].Cells["last_name"].Value = reader["last_name"];
@@ -55,9 +54,7 @@ namespace SchoolManagement
                                 dataGridViewTeacher.Rows[rowIndex].Cells["status"].Value = reader["status"];
                                 dataGridViewTeacher.Rows[rowIndex].Cells["experiences"].Value = reader["experiences"];
                                 dataGridViewTeacher.Rows[rowIndex].Cells["email"].Value = reader["email"];
-                                dataGridViewTeacher.Rows[rowIndex].Cells["birth_date"].Value = reader["birth_date"];
                                 dataGridViewTeacher.Rows[rowIndex].Cells["type"].Value = reader["type"];
-                                dataGridViewTeacher.Rows[rowIndex].Cells["joined_date"].Value = reader["joined_date"]+"";
                             }
                         }
                     }
