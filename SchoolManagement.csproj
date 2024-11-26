@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddClassFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClassFrm.Designer.cs">
+      <DependentUpon>AddClassFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddCourceFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     <Compile Include="UpdateRoomFrm.Designer.cs">
       <DependentUpon>UpdateRoomFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddClassFrm.resx">
+      <DependentUpon>AddClassFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddCourceFrm.resx">
       <DependentUpon>AddCourceFrm.cs</DependentUpon>
     </EmbeddedResource>

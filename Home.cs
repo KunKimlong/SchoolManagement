@@ -35,8 +35,9 @@ namespace SchoolManagement
         private void btnGoClass_Click(object sender, EventArgs e)
         {
             ClassFrm classFrm = new ClassFrm();
-            this.Close();
+            this.Hide();
             classFrm.ShowDialog();
+            this.Show();
         }
 
         private void btnGoCourses_Click(object sender, EventArgs e)
