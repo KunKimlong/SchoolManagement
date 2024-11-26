@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -21,6 +22,20 @@ namespace SchoolManagement
             string query = "SELECT * FROM teachers";
             try
             {
+                if (dataGridViewTeacher.Columns.Count == 0)
+                {
+                    dataGridViewTeacher.Columns.Add("id", "ID");
+                    dataGridViewTeacher.Columns.Add("first_name", "First Name");
+                    dataGridViewTeacher.Columns.Add("last_name", "Last Name");
+                    dataGridViewTeacher.Columns.Add("phone_number", "Phone Number");
+                    dataGridViewTeacher.Columns.Add("gender", "Gender");
+                    dataGridViewTeacher.Columns.Add("status", "Status");
+                    dataGridViewTeacher.Columns.Add("experiences", "Experiences");
+                    dataGridViewTeacher.Columns.Add("email", "Email");
+                    dataGridViewTeacher.Columns.Add("birth_date", "Birth Date");
+                    dataGridViewTeacher.Columns.Add("type", "Type");
+                    dataGridViewTeacher.Columns.Add("joined_date", "Joined Date");
+                }
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
@@ -42,7 +57,7 @@ namespace SchoolManagement
                                 dataGridViewTeacher.Rows[rowIndex].Cells["email"].Value = reader["email"];
                                 dataGridViewTeacher.Rows[rowIndex].Cells["birth_date"].Value = reader["birth_date"];
                                 dataGridViewTeacher.Rows[rowIndex].Cells["type"].Value = reader["type"];
-                                dataGridViewTeacher.Rows[rowIndex].Cells["join_date"].Value = reader["join_date"];
+                                dataGridViewTeacher.Rows[rowIndex].Cells["joined_date"].Value = reader["joined_date"]+"";
                             }
                         }
                     }
@@ -69,6 +84,11 @@ namespace SchoolManagement
             AddTeacherFrm frm = new AddTeacherFrm();
             frm.FormClosed += AddTeacherFrm_FormClosed;
             frm.ShowDialog();
+        }
+
+        private void TeacherFrm_Load(object sender, EventArgs e)
+        {
+            this.getData();
         }
     }
 }

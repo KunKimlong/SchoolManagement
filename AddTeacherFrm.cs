@@ -43,8 +43,8 @@ namespace SchoolManagement
                     profilePic = ms.ToArray();
                 }
             }
-            string query = "INSERT INTO teachers (first_name, last_name, phone_number, gender, status, experiences, email, password, birth_date,address, type, join_date, profile,created_at,updated_at) " +
-                           "VALUES (@firstName, @lastName, @phoneNumber, @gender, @status, @experiences, @email, @password, @birthDate,@address, @type, @joinDate, @profile,@created_at,@udpated_at)";
+            string query = "INSERT INTO teachers (first_name, last_name, phone_number, gender, status, experiences, email, password, birth_date,address, type, joined_date, profile,created_at,updated_at) " +
+                           "VALUES (@firstName, @lastName, @phoneNumber, @gender, @status, @experiences, @email, @password, @birthDate,@address, @type, @joinDate, @profile,@created_at,@updated_at)";
 
             try
             {
@@ -82,7 +82,6 @@ namespace SchoolManagement
             }
             catch (Exception ex)
             {
-                txtAddress.Text = ex.Message;
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

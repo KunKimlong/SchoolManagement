@@ -78,6 +78,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TeacherFrm";
             this.Text = "Teacher";
+            this.Load += new System.EventHandler(this.TeacherFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeacher)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
