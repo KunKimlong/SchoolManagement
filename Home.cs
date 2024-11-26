@@ -20,8 +20,9 @@ namespace SchoolManagement
         private void btnGoTeacher_Click(object sender, EventArgs e)
         {
             TeacherFrm teacherFrm = new TeacherFrm();
-            this.Close();
+            this.Hide();
             teacherFrm.ShowDialog();
+            this.Show();
         }
 
         private void btnGoStudent_Click(object sender, EventArgs e)
@@ -36,6 +37,22 @@ namespace SchoolManagement
             ClassFrm classFrm = new ClassFrm();
             this.Close();
             classFrm.ShowDialog();
+        }
+
+        private void btnGoCourses_Click(object sender, EventArgs e)
+        {
+            CourseManagementFrm courseManagementFrm = new CourseManagementFrm();
+            this.Hide();
+            courseManagementFrm.ShowDialog();
+            this.Show();
+        }
+
+        private void btnGoManageRoom_Click(object sender, EventArgs e)
+        {
+            RoomManagement roomManagement = new RoomManagement();
+            this.Hide();
+            roomManagement.ShowDialog();
+            this.Show();
         }
     }
 }

@@ -98,17 +98,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCourceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCourceFrm.Designer.cs">
+      <DependentUpon>AddCourceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRoomFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRoomFrm.Designer.cs">
+      <DependentUpon>AddRoomFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeacherFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeacherFrm.Designer.cs">
+      <DependentUpon>AddTeacherFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Class.Designer.cs">
       <DependentUpon>Class.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectToDB.cs" />
     <Compile Include="CourseManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CourseManagement.Designer.cs">
       <DependentUpon>CourseManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCourseFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCourseFrm.Designer.cs">
+      <DependentUpon>EditCourseFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -142,11 +167,29 @@
     <Compile Include="Teacher.Designer.cs">
       <DependentUpon>Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateRoomFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRoomFrm.Designer.cs">
+      <DependentUpon>UpdateRoomFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCourceFrm.resx">
+      <DependentUpon>AddCourceFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRoomFrm.resx">
+      <DependentUpon>AddRoomFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeacherFrm.resx">
+      <DependentUpon>AddTeacherFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Class.resx">
       <DependentUpon>Class.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CourseManagement.resx">
       <DependentUpon>CourseManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCourseFrm.resx">
+      <DependentUpon>EditCourseFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -171,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher.resx">
       <DependentUpon>Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRoomFrm.resx">
+      <DependentUpon>UpdateRoomFrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

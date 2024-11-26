@@ -75,6 +75,7 @@
             this.btnGoCourses.Text = "Manage Courses";
             this.btnGoCourses.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGoCourses.UseVisualStyleBackColor = false;
+            this.btnGoCourses.Click += new System.EventHandler(this.btnGoCourses_Click);
             // 
             // btnGoManageRoom
             // 
@@ -89,6 +90,7 @@
             this.btnGoManageRoom.Text = "Manage Room";
             this.btnGoManageRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGoManageRoom.UseVisualStyleBackColor = false;
+            this.btnGoManageRoom.Click += new System.EventHandler(this.btnGoManageRoom_Click);
             // 
             // btnGoTeacher
             // 
