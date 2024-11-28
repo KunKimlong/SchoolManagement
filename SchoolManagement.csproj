@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddClassFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClassFrm.Designer.cs">
+      <DependentUpon>AddClassFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddCourceFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,12 @@
     </Compile>
     <Compile Include="CourseManagement.Designer.cs">
       <DependentUpon>CourseManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClassFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClassFrm.Designer.cs">
+      <DependentUpon>EditClassFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="EditCourseFrm.cs">
       <SubType>Form</SubType>
@@ -179,6 +191,9 @@
     <Compile Include="UpdateRoomFrm.Designer.cs">
       <DependentUpon>UpdateRoomFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddClassFrm.resx">
+      <DependentUpon>AddClassFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddCourceFrm.resx">
       <DependentUpon>AddCourceFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CourseManagement.resx">
       <DependentUpon>CourseManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClassFrm.resx">
+      <DependentUpon>EditClassFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditCourseFrm.resx">
       <DependentUpon>EditCourseFrm.cs</DependentUpon>
