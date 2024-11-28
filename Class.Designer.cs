@@ -41,26 +41,29 @@
             this.btnDelete.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnDelete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDelete.Location = new System.Drawing.Point(671, 157);
+            this.btnDelete.Location = new System.Drawing.Point(665, 157);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(147, 47);
+            this.btnDelete.Size = new System.Drawing.Size(153, 47);
             this.btnDelete.TabIndex = 30;
             this.btnDelete.Text = "- Delete Course";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnUpdate.Enabled = false;
             this.btnUpdate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnUpdate.Location = new System.Drawing.Point(504, 157);
+            this.btnUpdate.Location = new System.Drawing.Point(450, 157);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(148, 47);
+            this.btnUpdate.Size = new System.Drawing.Size(202, 47);
             this.btnUpdate.TabIndex = 29;
             this.btnUpdate.Text = "* Update Course";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnCourseAdd
             // 
@@ -74,7 +77,8 @@
             this.btnCourseAdd.TabIndex = 28;
             this.btnCourseAdd.Text = "+ Add Class";
             this.btnCourseAdd.UseVisualStyleBackColor = false;
-            // 
+/*            this.btnCourseAdd.Click += new System.EventHandler(this.btnCourseAdd_Click);
+*/            // 
             // dataGridViewClass
             // 
             this.dataGridViewClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -84,6 +88,7 @@
             this.dataGridViewClass.RowHeadersWidth = 51;
             this.dataGridViewClass.Size = new System.Drawing.Size(762, 251);
             this.dataGridViewClass.TabIndex = 27;
+            this.dataGridViewClass.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewClass_CellContentClick);
             // 
             // label1
             // 
@@ -114,6 +119,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "ClassFrm";
             this.Text = "Teacher_ID";
+            this.Load += new System.EventHandler(this.ClassFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClass)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
