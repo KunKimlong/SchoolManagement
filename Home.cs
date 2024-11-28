@@ -12,9 +12,16 @@ namespace SchoolManagement
 {
     public partial class Home : Form
     {
-        public Home()
+        private string firstName;
+        private string lastName;
+        private string gender;
+
+        public Home(string firstName, string lastName, string gender)
         {
             InitializeComponent();
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.gender = gender;
         }
 
         private void btnGoTeacher_Click(object sender, EventArgs e)
@@ -28,8 +35,9 @@ namespace SchoolManagement
         private void btnGoStudent_Click(object sender, EventArgs e)
         {
             StudentFrm studentFrm = new StudentFrm();
-            this.Close();
+            this.Hide();
             studentFrm.ShowDialog();
+            this.Show();
         }
 
         private void btnGoClass_Click(object sender, EventArgs e)
@@ -53,6 +61,19 @@ namespace SchoolManagement
             this.Hide();
             roomManagement.ShowDialog();
             this.Show();
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            string title = (gender.ToLower() == "male") ? "Mr." : "Ms.";
+            WelcomeLabel1.Text = $"Welcome, {title} {firstName} {lastName}!";
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.ShowDialog();
         }
     }
 }

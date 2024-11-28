@@ -110,6 +110,12 @@
     <Compile Include="AddRoomFrm.Designer.cs">
       <DependentUpon>AddRoomFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddStudentFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudentFrm.Designer.cs">
+      <DependentUpon>AddStudentFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddTeacherFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddRoomFrm.resx">
       <DependentUpon>AddRoomFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudentFrm.resx">
+      <DependentUpon>AddStudentFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddTeacherFrm.resx">
       <DependentUpon>AddTeacherFrm.cs</DependentUpon>

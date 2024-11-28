@@ -42,10 +42,10 @@
             // btnCourseClear
             // 
             this.btnCourseClear.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCourseClear.Location = new System.Drawing.Point(240, 304);
-            this.btnCourseClear.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCourseClear.Location = new System.Drawing.Point(320, 374);
+            this.btnCourseClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCourseClear.Name = "btnCourseClear";
-            this.btnCourseClear.Size = new System.Drawing.Size(106, 38);
+            this.btnCourseClear.Size = new System.Drawing.Size(141, 47);
             this.btnCourseClear.TabIndex = 23;
             this.btnCourseClear.Text = "Clear";
             this.btnCourseClear.UseVisualStyleBackColor = true;
@@ -54,10 +54,10 @@
             // btnCourseAdd
             // 
             this.btnCourseAdd.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCourseAdd.Location = new System.Drawing.Point(82, 304);
-            this.btnCourseAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCourseAdd.Location = new System.Drawing.Point(109, 374);
+            this.btnCourseAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCourseAdd.Name = "btnCourseAdd";
-            this.btnCourseAdd.Size = new System.Drawing.Size(106, 38);
+            this.btnCourseAdd.Size = new System.Drawing.Size(141, 47);
             this.btnCourseAdd.TabIndex = 22;
             this.btnCourseAdd.Text = "Add Course";
             this.btnCourseAdd.UseVisualStyleBackColor = true;
@@ -66,60 +66,57 @@
             // txtCourseDiscount
             // 
             this.txtCourseDiscount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCourseDiscount.Location = new System.Drawing.Point(170, 218);
-            this.txtCourseDiscount.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCourseDiscount.Location = new System.Drawing.Point(227, 268);
+            this.txtCourseDiscount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCourseDiscount.Name = "txtCourseDiscount";
-            this.txtCourseDiscount.Size = new System.Drawing.Size(243, 27);
+            this.txtCourseDiscount.Size = new System.Drawing.Size(323, 32);
             this.txtCourseDiscount.TabIndex = 21;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(21, 221);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(28, 272);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 19);
+            this.label5.Size = new System.Drawing.Size(151, 24);
             this.label5.TabIndex = 20;
             this.label5.Text = "Course Discount:";
             // 
             // txtCoursePrice
             // 
             this.txtCoursePrice.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCoursePrice.Location = new System.Drawing.Point(170, 168);
-            this.txtCoursePrice.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCoursePrice.Location = new System.Drawing.Point(227, 207);
+            this.txtCoursePrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCoursePrice.Name = "txtCoursePrice";
-            this.txtCoursePrice.Size = new System.Drawing.Size(243, 27);
+            this.txtCoursePrice.Size = new System.Drawing.Size(323, 32);
             this.txtCoursePrice.TabIndex = 19;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(46, 171);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(61, 210);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 19);
+            this.label3.Size = new System.Drawing.Size(118, 24);
             this.label3.TabIndex = 18;
             this.label3.Text = "Course Price:";
             // 
             // txtCourseName
             // 
             this.txtCourseName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCourseName.Location = new System.Drawing.Point(170, 124);
-            this.txtCourseName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCourseName.Location = new System.Drawing.Point(227, 153);
+            this.txtCourseName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCourseName.Name = "txtCourseName";
-            this.txtCourseName.Size = new System.Drawing.Size(243, 27);
+            this.txtCourseName.Size = new System.Drawing.Size(323, 32);
             this.txtCourseName.TabIndex = 17;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(40, 127);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(53, 156);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 19);
+            this.label4.Size = new System.Drawing.Size(127, 24);
             this.label4.TabIndex = 16;
             this.label4.Text = "Course Name:";
             // 
@@ -130,19 +127,18 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Calibri", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(111, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(176, 44);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(8);
-            this.label1.Size = new System.Drawing.Size(213, 51);
+            this.label1.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.label1.Size = new System.Drawing.Size(261, 62);
             this.label1.TabIndex = 13;
             this.label1.Text = "Add New Course";
             // 
             // AddCourceFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 421);
+            this.ClientSize = new System.Drawing.Size(664, 518);
             this.Controls.Add(this.btnCourseClear);
             this.Controls.Add(this.btnCourseAdd);
             this.Controls.Add(this.txtCourseDiscount);
@@ -152,6 +148,7 @@
             this.Controls.Add(this.txtCourseName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddCourceFrm";
             this.Text = "Add Cources";
             this.ResumeLayout(false);
